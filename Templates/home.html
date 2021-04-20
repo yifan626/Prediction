@@ -8,21 +8,20 @@
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   
 </head>
 
 <body>
  <div class="login">
-	<h1>Jaipur's Air Quality Index Index</h1>
+	<h1>STOCK PREDICTION</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="interview_score3" placeholder="Maximum Wind Speed" required="required" /><br>
-    	<input type="text" name="experience" placeholder="Maximum Temperature" required="required" /><br>
-        <input type="text" name="test_score" placeholder="Minimum Temperature" required="required" /><br>
-        <input type="text" name="interview_score5" placeholder="Average Temperature" required="required" /><br>
-        <input type="text" name="interview_score6" placeholder="Average Wind Speed" required="required" /><br>
+      <input type="text" name="interview_score3" placeholder="LOW" required="required" /><br>
+    	<input type="text" name="experience" placeholder="HIGH" required="required" /><br>
+        <input type="text" name="test_score" placeholder="VOLUME" required="required" /><br>
+        <input type="text" name="interview_score5" placeholder="OPEN" required="required" /><br>
+      
 
        
 
