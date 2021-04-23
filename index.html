@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if html_m %}
+<h1 class="pgHead"> {{ticker}} </h1>
+
+<div class="content">
+<div class="left">
+<div class="login">
+    <h1>Prediction Chart</h1>
+    
+</div>
+
+<div class="right">
+    <!-- <img src="" id="img_p" alt="Chart"> -->
+    <div id="fig_f">    {{html_f|safe}}     </div>
+    <div class="desc">
+        
+    </div>
+</div>
+</div>
+
+<script>
+    // set_data("img_m", "{{data_m}}")
+    // set_data("img_p", "{{data_p}}")
+    console.log({{html_f}})
+</script>
+
+{% else %}
+
+<form action="" method="get" class="stock">
+    <input type="text" name="ticker" class="ticker_ip" placeholder="Ticker Name">
+    <input type="submit" value="Submit">
+    
+</form>
+{reference only}
+
+{% endif %}
+
+{% endblock content %}
