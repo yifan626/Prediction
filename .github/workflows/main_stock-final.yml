@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'stock-final'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_29d84c5eba134f1fbc745533f31711eb }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_cce736fa8b2749b7b90d1205ca07c9bd }}
